@@ -18,6 +18,9 @@ __pycache__/
 .env
 .env.*
 
+# Local Codex planning/report logs
+codex_reports/
+
 # Raw and generated data
 data/raw/*
 data/interim/*
