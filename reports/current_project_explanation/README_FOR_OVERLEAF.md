@@ -1,35 +1,70 @@
 # README for Overleaf
 
-This folder is an Overleaf-ready documentation package for the current MLSS exoplanet habitability classifier project.
+This folder is now a real Overleaf-ready LaTeX project for the early MLSS exoplanet habitability classifier report.
 
-## Contents
+## What to upload
 
-- `current_project_report.md`: Main explanatory report in Markdown.
-- `references.bib`: Bibliography entries for official documentation and XGBoost references.
-- `tables/model_comparison.csv`: Lightweight CSV version of the visible final model comparison table.
-- `tables/model_comparison.md`: Markdown version of the visible final model comparison table.
-- `figures/`: PNG figures extracted from saved notebook outputs only.
-- `current_project_report.zip`: Zip archive of this report package.
+Upload this zip file to Overleaf:
+
+```text
+mlss-exoplanet-classifier-early-report.zip
+```
+
+The zip is structured so that `main.tex` is at the root of the archive. When opened, the zip root should contain:
+
+```text
+main.tex
+references.bib
+README_FOR_OVERLEAF.md
+figures/
+tables/
+```
+
+## Main document
+
+The project should compile from:
+
+```text
+main.tex
+```
+
+If Overleaf does not auto-detect the main file, select `main.tex` as the main document in the Overleaf project menu.
+
+## Compiler and references
+
+This report uses simple pdfLaTeX-compatible packages and BibTeX-style references:
+
+- Compiler: pdfLaTeX
+- Bibliography file: `references.bib`
+- Bibliography command in `main.tex`: `\bibliography{references}`
+- Bibliography style: `plain`
+
+On Overleaf, the normal compile button should run the needed LaTeX/BibTeX passes automatically. If references appear as question marks after the first compile, compile again.
+
+## Figures and tables
+
+Figures are stored in:
+
+```text
+figures/
+```
+
+Tables are stored in:
+
+```text
+tables/
+```
+
+The LaTeX document uses relative paths such as:
+
+```text
+figures/01_feature_boxplots_before_outlier_removal.png
+```
 
 ## What is not included
 
-This package does not include raw data, model binaries, notebook checkpoints, caches, or generated training outputs. It does not modify the original notebook and does not regenerate model results.
-
-## Using with Overleaf
-
-The main report is Markdown. Two practical options:
-
-1. Convert `current_project_report.md` to LaTeX with Pandoc before uploading to Overleaf.
-2. Upload the Markdown, figures, and `references.bib` to Overleaf and adapt them into an existing LaTeX template.
-
-The image links in the Markdown are relative to this folder, for example:
-
-```text
-figures/02_target_class_distribution.png
-```
-
-If converting with Pandoc, keep `references.bib` in the same folder and use the citation keys already present in the report.
+This package does not include raw data, model binaries, notebook checkpoints, caches, generated training outputs, or local Codex planning reports. It does not modify the original notebook and does not regenerate model results.
 
 ## Caveat
 
-This is explanatory documentation for the current notebook. It is not the enhanced/reproducible version of the project. README creation, workflow refactoring, requirements files, tests, CLI scripts, and modeling improvements are intentionally reserved for later steps.
+This is an early explanatory report for the current notebook. It is not the enhanced/reproducible version of the full project. README creation for the GitHub repository, workflow refactoring, requirements files, tests, CLI scripts, and modeling improvements are intentionally reserved for later steps.
