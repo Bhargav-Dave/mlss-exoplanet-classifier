@@ -1,0 +1,47 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local secrets/config
+.env
+.env.*
+
+# Raw and generated data
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Models and experiment outputs
+models/*
+!models/.gitkeep
+mlruns/
+
+# Large archives
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.7z
+
+# Generated report bundles
+reports/**/*.zip
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
