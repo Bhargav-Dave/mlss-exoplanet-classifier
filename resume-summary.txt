@@ -1,0 +1,10 @@
+Version A: 2 compact bullets
+
+- Built an end-to-end exoplanet habitability classifier using Kepler/KOI tabular features, benchmarking Logistic Elastic Net, SVM RBF, Random Forest, Gradient Boosting, XGBoost, and DummyClassifier under severe class imbalance.
+- Improved macro F1 from 0.487 baseline to 0.965 and accuracy from 0.948 to 0.993 using cross-validation, ROC-AUC/PR-AUC analysis, confusion matrices, and leakage-safe scikit-learn pipelines.
+
+Version B: 3 compact bullets
+
+- Built a reproducible exoplanet habitability classification pipeline from Kepler/KOI attributes, addressing rare positive-class imbalance with only 22 positive test cases.
+- Compared DummyClassifier, Logistic Elastic Net, SVM RBF, Random Forest, Gradient Boosting, and XGBoost using macro F1, accuracy, ROC-AUC, PR-AUC, and confusion-matrix evaluation.
+- Achieved 0.965 test macro F1 and 0.993 accuracy with Logistic Elastic Net/SVM RBF versus a 0.487 macro F1 baseline; implemented YAML-configured training, CLI execution, leakage-safe preprocessing, and pytest validation.
