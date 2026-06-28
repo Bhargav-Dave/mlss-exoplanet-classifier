@@ -1,6 +1,12 @@
 # README for Overleaf
 
-This folder is now a real Overleaf-ready LaTeX project for the early MLSS exoplanet habitability classifier report.
+This folder contains the early/current-project Overleaf report for the MLSS exoplanet habitability classifier. It explains the original notebook workflow and the historical notebook results before the project was fully modularized.
+
+For the final enhanced report with the reproducible pipeline results, use:
+
+```text
+reports/enhanced_project_overleaf/
+```
 
 ## What to upload
 
@@ -41,15 +47,15 @@ This report uses simple pdfLaTeX-compatible packages and BibTeX-style references
 
 On Overleaf, the normal compile button should run the needed LaTeX/BibTeX passes automatically. If references appear as question marks after the first compile, compile again.
 
-## Figures and tables
+## Assets
 
-Figures are stored in:
+Figures live in:
 
 ```text
 figures/
 ```
 
-Tables are stored in:
+Tables live in:
 
 ```text
 tables/
@@ -61,10 +67,10 @@ The LaTeX document uses relative paths such as:
 figures/01_feature_boxplots_before_outlier_removal.png
 ```
 
+## Scope
+
+This early report is useful for understanding the original notebook, target construction, features, model families, and historical notebook comparison table. It does not include the final enhanced-pipeline results.
+
 ## What is not included
 
-This package does not include raw data, model binaries, notebook checkpoints, caches, generated training outputs, or local Codex planning reports. It does not modify the original notebook and does not regenerate model results.
-
-## Caveat
-
-This is an early explanatory report for the current notebook. It is not the enhanced/reproducible version of the full project. README creation for the GitHub repository, workflow refactoring, requirements files, tests, CLI scripts, and modeling improvements are intentionally reserved for later steps.
+This package does not include raw data, model binaries, notebook checkpoints, caches, generated training outputs, or local Codex planning reports. It does not modify the original notebook.
